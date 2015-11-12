@@ -4,7 +4,7 @@
 @setlocal
 
 @set _REPOS=%2
-@set _REBUP=%3\%DATE%
+@set _REBUP=%3\%DATE%.%1
 @set _RELST=%3\svnrepos.txt
 
 @echo SVN Repository Backup
@@ -33,6 +33,7 @@ if not exist %_REBUP% mkdir %_REBUP%
 GOTO CLEANUP
 
 :CLEANUP
-@endlocal
 @DEL %_RELST%
+@endlocal
+
 

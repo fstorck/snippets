@@ -9,4 +9,6 @@
 
 @echo SVNDUMP: %_REPOS%
 :: @echo %_DST%\%_REPOS%.svndump
-@svnadmin dump %_SRC%\%_REPOS% > %_DST%\%_REPOS%.svndump
+@svnadmin verify %_SRC%\%_REPOS%
+@svnadmin dump --deltas %_SRC%\%_REPOS% > %_DST%\%_REPOS%.svndump
+

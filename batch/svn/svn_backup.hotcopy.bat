@@ -9,3 +9,4 @@
 
 @echo HOTCOPY: %_REPOS%
 @svnadmin hotcopy --clean-logs %_SRC%\%_REPOS% %_DST%\%_REPOS%
+@svnadmin verify %_DST%\%_REPOS%
