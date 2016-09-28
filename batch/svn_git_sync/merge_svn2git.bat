@@ -1,11 +1,11 @@
-# Merge changes back from svn into Github trunk
-# ----------------------------------------
-#
-# First all changes from svn are going to be 
-# merged locally and staged to be pushed out 
-# to the Github repository.
-#
-# Source: http://ben.lobaugh.net/blog/147853/creating-a-two-way-sync-between-a-github-repository-and-subversion
+:: Merge changes back from svn into Github trunk
+:: ----------------------------------------
+::
+:: First all changes from svn are going to be 
+:: merged locally and staged to be pushed out 
+:: to the Github repository.
+::
+:: Source: http://ben.lobaugh.net/blog/147853/creating-a-two-way-sync-between-a-github-repository-and-subversion
 
 
 git checkout svnsync
